@@ -1,4 +1,4 @@
-
+import ButtonAppBar  from './components/AppBar.js';
 import {useEffect, useState} from 'react' ; 
 
 const innitialForm = {
@@ -43,6 +43,7 @@ function App() {
   }
   return (
     <div>
+      <ButtonAppBar />
       <form onSubmit={handleSubmit}>
       <input type="number" name="amount" value={form.amount} onChange={handleChange} placeholder="Enter transaction amount" />
       <input type="text"   name="description" value={form.description} onChange={handleChange} placeholder="Enter transaction details" />
